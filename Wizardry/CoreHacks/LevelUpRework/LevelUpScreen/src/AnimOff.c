@@ -150,7 +150,7 @@ void MapAnimLevelUp_PutWindowOffScreen(Proc_MapAnimLevelUp_t* proc){
 	BG_SetPosition(BG0, 0, proc->yPos);
 	BG_SetPosition(BG1, 0, proc->yPos);
 	
-	if( proc->yPos >= 0xFF70 )
+	if( proc->yPos >= 0xFF70 && proc->yPos <= 0xFFD0 )
 		gpFaceProcs->yPosition = 0x20 - proc->yPos;
 	
 	if( proc->yPos <= 0xFF80 )

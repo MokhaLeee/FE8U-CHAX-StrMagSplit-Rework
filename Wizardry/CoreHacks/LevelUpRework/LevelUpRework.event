@@ -13,6 +13,14 @@
 // GrowthGetter
 #include "GrowthGetter/GrowthGetter.lyn.event"
 
+// Check Cap
+#include "CheckCap/CheckCap.lyn.event"
+
+// Auto Level
+#include "AutoLevel/AutoLevel.lyn.event"
+
+
+
 
 // On Modular
 #include HookList.event

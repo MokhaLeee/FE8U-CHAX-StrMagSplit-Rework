@@ -1,7 +1,7 @@
 #ifndef MODULAR_SAVE_H
 #define MODULAR_SAVE_H
 
-#include "CLib/include/gbafe.h"
+#include "FE-CLib/include/gbafe.h"
 
 struct SaveBlockDecl {
 	/* 00 */ u16 offset;

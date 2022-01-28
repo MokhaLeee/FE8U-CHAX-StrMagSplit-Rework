@@ -30,7 +30,7 @@ For compiling `Wizardry`, you are recommended to refer to [setup-tips on Skill-L
 
 ## Main ideas on expand levelup screen
 
-1. For vanilla, `gLevelUpStatsBase` are used to store both unit base and unit status change on case of Anim-on. Here we just store base status there, and unit base status are directly loaded from BattleUnit struct.
+1. For vanilla, `gLevelUpStatsBase`(start from 0x2020110, free up to +0x2020132) are used to store both unit base and unit status change on case of Anim-on. Here we just store status-up there, and unit base status are directly loaded from BattleUnit struct.
 
 2. TextHandle struct are not enough for expansion, so I use `gStatScreen.texts[]` for displaying level-up texts.
 
@@ -45,17 +45,17 @@ For compiling `Wizardry`, you are recommended to refer to [setup-tips on Skill-L
 	- Modular Status Getter
 	- Status Screen
 		- Draw Pages (Page Unit)
-		- Help Box (Page Unit)
+		- Help Box (Page Unit)	
 	-Level Up Rework
 		- ModLU: CheckBattleUnitLevelUp
 		- Level up Screen
 		- Promotion: ApplyUnitPromotion/ promo-diff
-		- Modular Growth Getters
-	- Str/Mag Split core
-		- combat (not change this file)
-		- Misc Getter (unit mag getter, class mag cap getter...)
 		- Auto Level (add unit mag auto-level)
 		- Check Cap (add check cap for unit mag level up)
+		- Growth Getter	
+	- Str/Mag Split core
+		- combat (not change this file)
+		- Misc Getter (get class mag cap, get unit mag growth, etc)
 		- SRAM functions for Mod-Exp-Save
 		- Other HookList functions
 
