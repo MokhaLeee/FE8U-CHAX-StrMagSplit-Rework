@@ -1,0 +1,24 @@
+## SD_Vantage
+Vantage:[N]
+When unit is defender with[N]
+HP is <50%, attack first.[X]
+
+## SD_VantageBattalion
+Vantage Battalion:[N]
+When unit is defender with[N]
+battalion<1/3, attack first.[X]
+
+## SD_Desperation
+Desperation:[N]
+When unit initiates combat with HP <50%,[N]
+double attacks immediately if possible.[X]
+
+## SD_DesperationBattalion
+Battalion Desperation: [N]
+When unit is attacker with battalion[N]
+<1/3, double attacks immediately.[X]
+
+## SD_QuickRiposte
+Quick Riposte:[N]
+If unit is defender with HP >50%,[N]
+double attacks.[X]

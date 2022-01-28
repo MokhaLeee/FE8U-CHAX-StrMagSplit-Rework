@@ -1,0 +1,37 @@
+
+#include Custom Definations.event
+
+ORG FreeSpace
+	#include "Writans/text-repoint/repointedTextTable.event"
+	#include "Writans/InstallTextData.event"
+	#include "Wizardry/Wizardry.event"
+	
+	#include "GameData/GameData.event"
+
+
+
+// For Debug
+PUSH
+
+	ORG	$2C5AC
+	BYTE $64 $20	// Exp=100
+
+	ORG $8B3C2B
+	BYTE $50		// Eirika level 10
+
+	ORG $8B3C29
+	BYTE Mage_F		// Eirika Class = Mage
+		
+	ORG $8B3C35		// Eirika items
+	BYTE Fire GuidingRing
+	
+	ORG $8B3C51
+	BYTE Mage		// O'Neill class
+	BYTE 0
+	BYTE $A5		// O'Neill auto level, and level=20
+	
+	ORG $8B3C65		// Prologue solder
+	BYTE Mage
+	BYTE 0
+	BYTE $A5
+POP

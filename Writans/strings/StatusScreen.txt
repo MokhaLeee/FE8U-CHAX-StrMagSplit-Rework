@@ -1,0 +1,48 @@
+
+
+##CharmString
+Cha
+
+## MagicString
+Mag
+
+## LuckString
+Lck
+
+## StatString
+Stat
+
+## ssWpnEqpName
+Eqp
+
+## ssWpnEqpDesc
+Equipped Weapon, will use[N]
+it in next encountered battle.
+
+## ssCharmDesc
+Charm, affects unit's Gambit Mt,[N]
+Hit, and Avoid. (5 x Charm%).
+
+## ssBrawlDesc
+Brawling mastery level
+
+## ssReasonDesc
+Reason mastery level
+
+## ssFaithDesc
+Faith mastery level
+
+## ssAuthorityDesc
+Authority mastery level
+
+## ssRidingDesc
+Riding mastery level
+
+## ssFlyingDesc
+Flying mastery level
+
+## ssHeavyDesc
+Heavy Armor mastery level
+
+## msgCharmDesc
+Nothing but just for test LOL

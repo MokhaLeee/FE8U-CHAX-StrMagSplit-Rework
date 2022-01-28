@@ -1,0 +1,25 @@
+#ifndef BATTLE_UNIT_HOOK
+#define BATTLE_UNIT_HOOK
+
+
+
+#include "src/Core.lyn.event"
+#include "src/User_Funcs.lyn.event"
+
+
+// void U2B (struct BattleUnit* bu, struct Unit* unit);
+ALIGN 4
+Unit2BattleFuncList:
+	POIN U2B_Vanilla	
+	POIN U2B_Mag		// CoreHacks/StrMag
+	WORD 0
+
+
+// void B2U (struct Unit* unit, struct BattleUnit* bu);
+ALIGN 4
+Battle2UnitFuncList:
+	POIN B2U_Vanilla
+	POIN B2U_Mag		// CoreHacks/StrMag
+	WORD 0
+
+#endif // BATTLE_UNIT_HOOK

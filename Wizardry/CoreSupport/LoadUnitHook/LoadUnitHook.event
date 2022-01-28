@@ -1,0 +1,14 @@
+#ifndef LOAD_UNIT_HOOK
+#define LOAD_UNIT_HOOK
+
+#include "src/Core.lyn.event"
+
+
+// void (*HookFunc)(struct Unit* unit);
+
+ALIGN 4
+OnLoadUnitFuncList:
+	POIN LoadUnit_Mag 		// CoreHacks/StrMag/LoadUnit
+	WORD 0
+
+#endif // LOAD_UNIT_HOOK

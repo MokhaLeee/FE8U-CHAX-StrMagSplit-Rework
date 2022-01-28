@@ -1,0 +1,19 @@
+
+// LevelUp Screen
+#include "LevelUpScreen/LevelUpScreen.event"
+
+// Promotion
+#include "Promotion/Promotion.lyn.event"
+#include "Promotion/Promo-UserFuncs.lyn.event"
+
+// Level Up
+#include "LevelUp/LevelUp.lyn.event"
+#include "LevelUp/MLU_UserFuncs.lyn.event"
+
+// GrowthGetter
+#include "GrowthGetter/GrowthGetter.lyn.event"
+
+
+// On Modular
+#include HookList.event
+#include GrowthGetterTable.event

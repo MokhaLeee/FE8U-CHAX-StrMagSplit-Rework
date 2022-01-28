@@ -1,0 +1,18 @@
+#ifndef STR_MAG_SPLIT_CORE
+#define STR_MAG_SPLIT_CORE
+
+#include "Combat/_Combat.event"
+#include "Getter/MagGetterMisc.lyn.event"
+#include "LoadUnit/LoadUnitMag.lyn.event"
+#include "BattleUnit/BattleUnitMag.lyn.event"
+#include "SaveData/SaveMag.lyn.event"
+#include "LevelUp/MagPromotion.lyn.event"
+
+// Check Cap
+#include "CheckCap/CheckCap.lyn.event"
+
+// Auto Level
+#include "AutoLevel/AutoLevel.lyn.event"
+
+
+#endif // STR_MAG_SPLIT_CORE

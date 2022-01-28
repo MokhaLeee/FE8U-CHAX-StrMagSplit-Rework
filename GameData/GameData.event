@@ -1,0 +1,12 @@
+#ifndef GAME_DATA
+#define GAME_DATA
+
+#include "EAstdlib.event"
+
+#include "Constants.event"
+// #include "Indices.event"
+
+
+#include "Tables/Table Installer.event"
+
+#endif // GAME_DATA

@@ -1,0 +1,62 @@
+PUSH
+ORG $889D8
+POIN RText_PageUnit
+POP
+
+ALIGN 4
+RText_PageUnit:
+	// Line 1
+	ST_Str:
+	RMenu(ST_Res,ST_Mag,ST_Name,ST_Lck,0x66,0x18,0x546)
+	
+	ST_Mag:
+	RMenu(ST_Str,ST_Skl,ST_Name,ST_Mov,0x66,0x28,0x547)
+	
+	ST_Skl:
+	RMenu(ST_Mag,ST_Spd,ST_Name,ST_Con,0x66,0x38,0x548)
+	
+	ST_Spd:
+	RMenu(ST_Skl,ST_Def,ST_Name,ST_Aid,0x66,0x48,0x549)
+	
+	ST_Def:
+	RMenu(ST_Spd,ST_Res,ST_Name,ST_Trv,0x66,0x58,0x54B)
+	
+	ST_Res:
+	RMenu(ST_Def,ST_Str,ST_Class,ST_Stat,0x66,0x68,0x54C)
+	
+	
+	// Line 2
+	ST_Lck:
+	RMenu(ST_Stat,ST_Mov,ST_Str,ST_Name,0xA6,0x18,0x54A)
+	
+	ST_Mov:
+	RMenu(ST_Lck,ST_Con,ST_Mag,ST_Name,0xA6,0x28,0x54D)
+	
+	ST_Con:
+	RMenu(ST_Mov,ST_Aid,ST_Skl,ST_Name,0xA6,0x38,0x54E)
+	
+	ST_Aid:
+	RMenu(ST_Con,ST_Trv,ST_Spd,ST_Name,0xA6,0x48,0x54F)
+	
+	ST_Trv:
+	RMenu(ST_Aid,ST_Stat,ST_Def,ST_Name,0xA6,0x58,0x550)
+	
+	ST_Stat:
+	RMenu(ST_Trv,ST_Lck,ST_Res,ST_Class,0xA6,0x68,0x552,ConditionGetter)
+	
+	
+	// Left
+	ST_Name:
+	RMenu(ST_HP,ST_Class,ST_Trv,ST_Spd,0x18,0x50,0x0,NameDescGetter)
+	
+	ST_Class:
+	RMenu(ST_Name,ST_Level,ST_Stat,ST_Res,0x6,0x68,0x6E8,ClassDescGetter)
+	
+	ST_Level:
+	RMenu(ST_Class,ST_HP,ST_Stat,ST_Exp,0x6,0x78,0x542)
+	
+	ST_Exp:
+	RMenu(ST_Class,ST_HP,ST_Level,ST_Res,0x26,0x78,0x543)
+	
+	ST_HP:
+	RMenu(ST_Level,ST_Name,ST_Stat,ST_Exp,0x6,0x88,0x544)

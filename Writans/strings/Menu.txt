@@ -1,0 +1,77 @@
+## umBMagName
+ B.Magic
+
+## umBMagDesc
+B.Magic
+
+## umWMagName
+ W.Magic
+
+## umWMagDesc
+W.Magic
+
+## umMagGrayBox
+you have run out of magic uses.[X]
+
+## umSubMagGrayBox
+Magic have no effect[N]
+on current position.[X]
+
+## umCAname
+ Combat Art[X]
+
+## umCAdesc
+Combat Art:[N]
+Gains battle bonus[N]
+but null double attack.[X]
+
+## umCAGrayBox
+You don't have Combat Art ![X]
+
+## umCAselectGrayBox
+you cannot use[N]
+Combat Art here.[X]
+
+## umGambitName
+ Gambit[X]
+
+## umGambitDesc
+Gambit:[N]
+Three House's Style AOE attack.[X]
+
+## umAOEDefaultName
+ Default
+
+## umAOEDefaultDesc
+Default
+
+## umAOEAssemblyName
+ Assembly
+
+## umAOEAssemblyDesc
+Assembly
+
+## umAOEBaszeName
+ Basze
+
+## umAOEBaszeDesc
+Basze
+
+## umAOEAbsorptionName
+ Absorption
+
+## umAOEAbsorptionDesc
+Absorption
+
+## umAOEFusilladeName
+ Fusillade
+
+## umAOEFusilladeDesc
+Fusillade
+
+
+## umAOEFireArrowsName
+ FireArrows
+
+## umAOEFireArrowsDesc
+FireArrows

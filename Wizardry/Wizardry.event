@@ -1,0 +1,50 @@
+#ifndef MASTER_HACK_INSTALLER
+#define MASTER_HACK_INSTALLER
+
+
+// This file is the main file that includes Wizardry (aka Engine Hacks or Asm Hacks)
+// It plays the same role as "Master Hack Installers" from other buildfiles.
+
+#include "Extensions/Hack Installation.txt"
+#include EssentialFixes.event
+
+// =======================
+// = CORE HACKS BL RANGE =
+// =======================
+PUSH
+ORG FreeSpaceBLRange 	//defined in custom definitions
+#define inBLRange
+	
+	#include "CoreHacks/StrMag/BLRange.event"
+
+#undef inBLRange
+POP
+
+
+// =========================
+// = CORE SUPPORTING HACKS =
+// =========================
+ALIGN 4
+
+#include "CoreSupport/BattleUnitHook/BattleUnitHook.event"
+#include "CoreSupport/LoadUnitHook/LoadUnitHook.event"
+#include "CoreSupport/SaveData/ExModularSave.event"
+
+
+// ========================
+// = CORE MECHANICS HACKS =
+// ========================
+ALIGN 4
+
+#include "CoreHacks/StatusGetter/StatusGetter.event"
+#include "CoreHacks/StrMag/StrMag.event"
+#include "CoreHacks/StatusScreen/StatusScreen.event"
+#include "CoreHacks/LevelUpRework/LevelUpRework.event"
+
+
+// ============================
+// = ADDITIONAL FEATURE HACKS =
+// ============================
+
+
+#endif // MASTER_HACK_INSTALLER
