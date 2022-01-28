@@ -46,18 +46,18 @@ For compiling `Wizardry`, you are recommended to refer to [setup-tips on Skill-L
 	- Status Screen
 		- Draw Pages (Page Unit)
 		- Help Box (Page Unit)	
-	-Level Up Rework
+	- Level Up Rework
 		- ModLU: CheckBattleUnitLevelUp
-		- Level up Screen
-		- Promotion: ApplyUnitPromotion/ promo-diff
-		- Auto Level (add unit mag auto-level)
-		- Check Cap (add check cap for unit mag level up)
+		- Level up Screen	
+		- Promotion: ApplyUnitPromotion/ promo-diff	
+		- Auto Level (add unit mag auto-level)	
+		- Check Cap (add check cap for unit mag level up)	
 		- Growth Getter	
-	- Str/Mag Split core
-		- combat (not change this file)
-		- Misc Getter (get class mag cap, get unit mag growth, etc)
-		- SRAM functions for Mod-Exp-Save
-		- Other HookList functions
+	- Str/Mag Split core	
+		- combat (not change this file)	
+		- Misc Getter (get class mag cap, get unit mag growth, etc)	
+		- SRAM functions for Mod-Exp-Save	
+		- Other HookList functions	
 
 ## Issues
 
